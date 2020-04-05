@@ -1,0 +1,380 @@
+{
+	"variables": [],
+	"info": {
+		"name": "api",
+		"_postman_id": "12a0522a-e36f-2030-a084-1c8c1bd8b0c0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:3000/users",
+					"request": {
+						"url": "http://localhost:3000/users",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "create"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/users",
+					"request": {
+						"url": "http://localhost:3000/users",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "create"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/users/:number",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/users/:number",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":number"
+							],
+							"query": [],
+							"variable": [
+								{
+									"key": "number",
+									"value": ""
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"description": "",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"url": "http://localhost:3000/auth/login",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "http://localhost:3000/auth/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pokedexes",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:3000/pokedexes?offset=0",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/pokedexes?offset=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pokedexes"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "lista"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/pokedexes/:number",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/pokedexes/:number",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pokedexes",
+								":number"
+							],
+							"query": [],
+							"variable": [
+								{
+									"key": "number",
+									"value": ""
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "details"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/pokedexes/:number",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/pokedexes/:number",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pokedexes",
+								":number"
+							],
+							"query": [],
+							"variable": [
+								{
+									"key": "number",
+									"value": ""
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name_english",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "name_japanese",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "name_chinese",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "name_french",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "hp",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "attack",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "defense",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "speed_attack",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "speed_defense",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "speed",
+									"value": "",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "update"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/pokedexes/:number",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/pokedexes/:number",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pokedexes",
+								":number"
+							],
+							"query": [],
+							"variable": [
+								{
+									"key": "number",
+									"value": ""
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "delete"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
