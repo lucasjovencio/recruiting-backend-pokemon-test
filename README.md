@@ -7,19 +7,20 @@ Teste tecnico para desenvolvedor, desenvolvido com as tecnologias:
   - Sqlite3 ~1.4
 
 # Instalação
-    - bundle install
-    - rails db:migrate
-    - rails db:seed
-    - rails server
+  - bundle install
+  - rails db:migrate
+  - rails db:seed
+  - rails server
 
 # Postman
-    Na raiz do projeto tem duas versões de postman para usar nos testes
-    - api.postman_v1.json
-    - api.postman_v2.json
+
+Na raiz do projeto tem duas versões de postman para usar nos testes
+  - api.postman_v1.json
+  - api.postman_v2.json
 
 # Swagger
-    [Documentação em swagger](https://app.swaggerhub.com/apis/jovencio/pokemon/1.0.0)
-
+  - [Documentação em swagger](https://app.swaggerhub.com/apis/jovencio/pokemon/1.0.0)
+    
 
 -------------
 -------------
