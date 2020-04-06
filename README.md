@@ -1,3 +1,30 @@
+# Lucas Coutinho Jovencio
+
+Teste tecnico para desenvolvedor, desenvolvido com as tecnologias:
+
+  - Ruby 2.6.6p146
+  - Rails 6.0.2.2
+  - Sqlite3 ~1.4
+
+# Instalação
+    - bundle install
+    - rails db:migrate
+    - rails db:seed
+    - rails server
+
+# Postman
+    Na raiz do projeto tem duas versões de postman para usar nos testes
+    - api.postman_v1.json
+    - api.postman_v2.json
+
+# Swagger
+    [Documentação em swagger](https://app.swaggerhub.com/apis/jovencio/pokemon/1.0.0)
+
+
+-------------
+-------------
+
+
 # Desafio Neolife Ruby on Rails
 
 ## Criar uma API de Pokemons com autenticação e rotas protegidas

@@ -23,7 +23,8 @@
 				"11d4dcf4-ac3e-4456-8d4b-155f76b796bd",
 				"8f9ea917-e881-08c2-0507-49461941c150",
 				"fc6e536b-f33d-dc12-f367-5250e3482f84",
-				"a4b888bf-bbe4-124a-a48b-dee2c50d01b4"
+				"a4b888bf-bbe4-124a-a48b-dee2c50d01b4",
+				"c1ec0f15-0989-5fc4-48b4-652a6b23f888"
 			],
 			"owner": "3892409",
 			"folders_order": [],
@@ -84,7 +85,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1586065650944,
+			"time": 1586135005979,
 			"name": "http://localhost:3000/pokedexes?offset=0",
 			"description": "lista",
 			"collectionId": "12a0522a-e36f-2030-a084-1c8c1bd8b0c0",
@@ -122,7 +123,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1586065663102,
+			"time": 1586134978765,
 			"name": "login",
 			"description": "http://localhost:3000/auth/login",
 			"collectionId": "12a0522a-e36f-2030-a084-1c8c1bd8b0c0",
@@ -181,7 +182,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1586065698049,
+			"time": 1586134968430,
 			"name": "http://localhost:3000/users/:number",
 			"description": "",
 			"collectionId": "12a0522a-e36f-2030-a084-1c8c1bd8b0c0",
@@ -240,7 +241,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1586065678799,
+			"time": 1586134957236,
 			"name": "http://localhost:3000/users",
 			"description": "create",
 			"collectionId": "12a0522a-e36f-2030-a084-1c8c1bd8b0c0",
@@ -257,26 +258,19 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:3000/pokedexes/:number",
+			"url": "http://localhost:3000/pokedexes/1",
 			"folder": "7f1fccf7-216a-9f36-3d13-d9580704a255",
 			"queryParams": [],
 			"preRequestScript": null,
-			"pathVariables": {
-				"number": ""
-			},
-			"pathVariableData": [
-				{
-					"key": "number",
-					"value": ""
-				}
-			],
+			"pathVariables": {},
+			"pathVariableData": [],
 			"method": "GET",
 			"data": null,
 			"dataMode": "params",
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1586065638600,
+			"time": 1586135021174,
 			"name": "http://localhost:3000/pokedexes/:number",
 			"description": "details",
 			"collectionId": "12a0522a-e36f-2030-a084-1c8c1bd8b0c0",
@@ -293,7 +287,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:3000/users",
+			"url": "http://localhost:3000/users/1",
 			"folder": "176cce75-a7ea-ec3b-68f1-80ac7aad5ba8",
 			"queryParams": [],
 			"preRequestScript": null,
@@ -306,8 +300,8 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1586039985920,
-			"name": "http://localhost:3000/users",
+			"time": 1586134954814,
+			"name": "http://localhost:3000/users/:number",
 			"description": "create",
 			"collectionId": "12a0522a-e36f-2030-a084-1c8c1bd8b0c0",
 			"responses": []
@@ -323,19 +317,12 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:3000/pokedexes/:number",
+			"url": "http://localhost:3000/pokedexes/1",
 			"folder": "7f1fccf7-216a-9f36-3d13-d9580704a255",
 			"queryParams": [],
 			"preRequestScript": null,
-			"pathVariables": {
-				"number": ""
-			},
-			"pathVariableData": [
-				{
-					"key": "number",
-					"value": ""
-				}
-			],
+			"pathVariables": {},
+			"pathVariableData": [],
 			"method": "DELETE",
 			"data": null,
 			"dataMode": "params",
@@ -343,9 +330,80 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1586065606464,
+			"time": 1586135054526,
 			"name": "http://localhost:3000/pokedexes/:number",
 			"description": "delete",
+			"collectionId": "12a0522a-e36f-2030-a084-1c8c1bd8b0c0",
+			"responses": []
+		},
+		{
+			"id": "c1ec0f15-0989-5fc4-48b4-652a6b23f888",
+			"headers": "Authorization: \n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/pokedexes",
+			"folder": "7f1fccf7-216a-9f36-3d13-d9580704a255",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "{\n      \"english\": \"\",\n      \"japanese\": \"\",\n      \"chinese\": \"\",\n      \"french\": \"\"\n    }",
+					"description": ""
+				},
+				{
+					"key": "hp",
+					"value": "",
+					"description": ""
+				},
+				{
+					"key": "attack",
+					"value": "",
+					"description": ""
+				},
+				{
+					"key": "defense",
+					"value": "",
+					"description": ""
+				},
+				{
+					"key": "speed",
+					"value": "",
+					"description": ""
+				},
+				{
+					"key": "speed_attack",
+					"value": "",
+					"description": ""
+				},
+				{
+					"key": "speed_defense",
+					"value": "",
+					"description": ""
+				},
+				{
+					"key": "types",
+					"value": "[]",
+					"description": ""
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1586135091975,
+			"name": "http://localhost:3000/pokedexes",
+			"description": "create",
 			"collectionId": "12a0522a-e36f-2030-a084-1c8c1bd8b0c0",
 			"responses": []
 		},
@@ -360,19 +418,12 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:3000/pokedexes/:number",
+			"url": "http://localhost:3000/pokedexes/1",
 			"folder": "7f1fccf7-216a-9f36-3d13-d9580704a255",
 			"queryParams": [],
 			"preRequestScript": null,
-			"pathVariables": {
-				"number": ""
-			},
-			"pathVariableData": [
-				{
-					"key": "number",
-					"value": ""
-				}
-			],
+			"pathVariables": {},
+			"pathVariableData": [],
 			"method": "PUT",
 			"data": [
 				{
@@ -451,7 +502,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1586065603088,
+			"time": 1586135043029,
 			"name": "http://localhost:3000/pokedexes/:number",
 			"description": "update",
 			"collectionId": "12a0522a-e36f-2030-a084-1c8c1bd8b0c0",

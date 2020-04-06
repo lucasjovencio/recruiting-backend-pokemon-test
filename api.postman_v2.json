@@ -12,9 +12,9 @@
 			"description": "",
 			"item": [
 				{
-					"name": "http://localhost:3000/users",
+					"name": "http://localhost:3000/users/:number",
 					"request": {
-						"url": "http://localhost:3000/users",
+						"url": "http://localhost:3000/users/1",
 						"method": "GET",
 						"header": [
 							{
@@ -208,25 +208,7 @@
 				{
 					"name": "http://localhost:3000/pokedexes/:number",
 					"request": {
-						"url": {
-							"raw": "http://localhost:3000/pokedexes/:number",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"pokedexes",
-								":number"
-							],
-							"query": [],
-							"variable": [
-								{
-									"key": "number",
-									"value": ""
-								}
-							]
-						},
+						"url": "http://localhost:3000/pokedexes/1",
 						"method": "GET",
 						"header": [
 							{
@@ -243,25 +225,7 @@
 				{
 					"name": "http://localhost:3000/pokedexes/:number",
 					"request": {
-						"url": {
-							"raw": "http://localhost:3000/pokedexes/:number",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"pokedexes",
-								":number"
-							],
-							"query": [],
-							"variable": [
-								{
-									"key": "number",
-									"value": ""
-								}
-							]
-						},
+						"url": "http://localhost:3000/pokedexes/1",
 						"method": "PUT",
 						"header": [
 							{
@@ -342,25 +306,7 @@
 				{
 					"name": "http://localhost:3000/pokedexes/:number",
 					"request": {
-						"url": {
-							"raw": "http://localhost:3000/pokedexes/:number",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"pokedexes",
-								":number"
-							],
-							"query": [],
-							"variable": [
-								{
-									"key": "number",
-									"value": ""
-								}
-							]
-						},
+						"url": "http://localhost:3000/pokedexes/1",
 						"method": "DELETE",
 						"header": [
 							{
@@ -371,6 +317,67 @@
 						],
 						"body": {},
 						"description": "delete"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/pokedexes",
+					"request": {
+						"url": "http://localhost:3000/pokedexes",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "{\n      \"english\": \"\",\n      \"japanese\": \"\",\n      \"chinese\": \"\",\n      \"french\": \"\"\n    }",
+									"description": ""
+								},
+								{
+									"key": "hp",
+									"value": "",
+									"description": ""
+								},
+								{
+									"key": "attack",
+									"value": "",
+									"description": ""
+								},
+								{
+									"key": "defense",
+									"value": "",
+									"description": ""
+								},
+								{
+									"key": "speed",
+									"value": "",
+									"description": ""
+								},
+								{
+									"key": "speed_attack",
+									"value": "",
+									"description": ""
+								},
+								{
+									"key": "speed_defense",
+									"value": "",
+									"description": ""
+								},
+								{
+									"key": "types",
+									"value": "[]",
+									"description": ""
+								}
+							]
+						},
+						"description": "create"
 					},
 					"response": []
 				}
