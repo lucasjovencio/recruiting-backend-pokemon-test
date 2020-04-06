@@ -1,3 +1,4 @@
+require 'json'
 class PokedexesController < ApplicationController
     before_action :authorize_request
     
@@ -20,6 +21,15 @@ class PokedexesController < ApplicationController
         end
     end
 
+    def create
+        pokedex = PokedexCreate.call(pokedex_params)
+        if pokedex[:success]
+            render json: pokedex[:response], status: :ok
+        else
+            render json: pokedex[:response], status: :unprocessable_entity
+        end
+    end
+
     def update
         pokedex = PokedexUpdate.call(pokedex_params)
         if pokedex[:success]
@@ -33,10 +43,11 @@ class PokedexesController < ApplicationController
         params.permit(
             :offset,
             :id,
-            :name_english,
             :name_japanese,
             :name_chinese,
             :name_french,
+            :name_english,
+            :name,
             :hp,
             :attack,
             :defense,
@@ -45,6 +56,7 @@ class PokedexesController < ApplicationController
             :speed,
             :speed_attack,
             :speed_attack,
+            :types,
         )
     end
 
