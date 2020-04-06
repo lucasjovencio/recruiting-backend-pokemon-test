@@ -10,6 +10,7 @@ Teste tecnico para desenvolvedor, desenvolvido com as tecnologias:
   - bundle install
   - rails db:migrate
   - rails db:seed
+  - rails db:migrate RAILS_ENV=test
   - rails server
 
 # Postman
@@ -17,6 +18,16 @@ Teste tecnico para desenvolvedor, desenvolvido com as tecnologias:
 Na raiz do projeto tem duas versões de postman para usar nos testes
   - api.postman_v1.json
   - api.postman_v2.json
+
+# Cobertura de testes
+  Validação de entrada de dados nos modelos do sistema.
+  - bundle exec rspec spec/models/
+    
+    ou manual
+      - bundle exec rspec spec/models/pokedex_spec.rb
+      - bundle exec rspec spec/models/pokedex_type_spec.rb
+      - bundle exec rspec spec/models/type_spec.rb
+      - bundle exec rspec spec/models/user_spec.rb
 
 # Swagger
   - [Documentação em swagger](https://app.swaggerhub.com/apis/jovencio/pokemon/1.0.0)

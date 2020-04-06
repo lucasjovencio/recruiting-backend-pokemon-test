@@ -6,6 +6,8 @@ class Pokedex < ApplicationRecord
     validates :speed_attack, presence: true
     validates :speed_defense, presence: true
     validates :speed, presence: true
+    validates_with NameJsonValidator
+    
     has_many :pokedexType, dependent: :destroy
     has_one_attached:image, dependent: :destroy
     has_one_attached:sprite, dependent: :destroy

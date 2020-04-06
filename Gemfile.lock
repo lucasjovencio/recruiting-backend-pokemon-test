@@ -63,9 +63,8 @@ GEM
     byebug (11.1.1)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
+    diff-lcs (1.3)
     erubi (1.9.0)
-    fast_jsonapi (1.5)
-      activesupport (>= 4.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.2)
@@ -120,6 +119,23 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.20.3, < 2.0)
     rake (13.0.1)
+    rspec-core (3.9.1)
+      rspec-support (~> 3.9.1)
+    rspec-expectations (3.9.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-mocks (3.9.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-rails (4.0.0)
+      actionpack (>= 4.2)
+      activesupport (>= 4.2)
+      railties (>= 4.2)
+      rspec-core (~> 3.9)
+      rspec-expectations (~> 3.9)
+      rspec-mocks (~> 3.9)
+      rspec-support (~> 3.9)
+    rspec-support (3.9.2)
     sprockets (4.0.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -146,11 +162,11 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.2)
   byebug
-  fast_jsonapi
   json
   jwt
   puma (~> 4.1)
   rails (~> 6.0.2, >= 6.0.2.2)
+  rspec-rails (~> 4.0.0)
   sqlite3 (~> 1.4)
   tzinfo-data
 

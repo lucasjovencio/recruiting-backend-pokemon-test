@@ -28,15 +28,7 @@ class PokedexCreate
             return
         end
         names = JSON.parse(@params[:name])
-        valid = nil
-        names.keys.each do |key|
-            if(names["#{key}"] != '' && names["#{key}"] != nil)
-                valid = 1
-            end
-        end
-        if valid
-            @pokedex.name = names
-        end
+        @pokedex.name = names
     end
 
     def save()
