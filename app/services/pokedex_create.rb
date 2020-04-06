@@ -13,7 +13,7 @@ class PokedexCreate
         insert_status_battle()
         insert_names()
         save()
-        types()
+        create_types()
         return @response
     end
     
@@ -45,13 +45,13 @@ class PokedexCreate
         )
     end
 
-    def types
+    def create_types
         types = JSON.parse(@params[:types])
         types.each do |key|
-            RepositoryPokedexType.register([
+            RepositoryPokedexType.first_or_create({
                 pokedex_id: @pokedex.id,
                 type_id: key
-            ])
+            })
         end
         types = PokedexType.where(:pokedex_id=>@pokedex.id).all
         types.each do |type|
